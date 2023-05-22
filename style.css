@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.background_img {
+    margin: 0 auto;
+    background-image: url(images/hero\ image.jpg);
+    height: 800px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin-bottom: 400px; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logotip img {
+    max-width: 100px;
+    height: 68px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 230px;
+}
+
+.navbar .nav ul li a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: 25px;
+}
+
+.navbar .nav ul li :hover {
+    color: #ff7400;
+}
+
+.navbar .icons i {
+    margin-left: 35px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.navbar .icons i:hover {
+    color: #ff7400;
+}
+
+.navbar .icons span {
+    border: 1px solid #FFFFFF;
+    transform: rotate(180deg);
+    height: 50px;
+    margin: 0 35px 0 18px;
+}
+
+.navbar .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .phone i {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.navbar .phone i:hover {
+    color: #ff7400;
+}
+
+.navbar span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.navbar p {
+    max-width: 154px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.navbar .zakaz {
+    margin-left: 63px;
+    margin-right: 70px;
+}
+
+.navbar .zakaz a {
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+    background: #FF7400;
+    padding: 14px 19px;
+    position: relative;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+.navbar .zakaz a::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #fff;
+    transition: all .5s ease;
+}
+
+.navbar .zakaz a:hover {
+    color: #FF7400;
+}
+
+.navbar .zakaz a:hover::before {
+    width: 100%;
+}
+
+.welcome {
+    max-width: 556px;
+    text-align: center;
+    margin-top: 180px;
+}
+
+.welcome h4 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 57px;
+    color: #D67E35;
+}
+
+.welcome h1 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 92px;
+    color: #D67E35;
+    margin-bottom: 15px;
+}
+
+.welcome span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.welcome .silka a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #FF7400;
+    padding: 14px 28px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.welcome .silka a:hover {
+    color: #ff7400;
+    background: #FFFFFF;
+}
+
+.qozonlar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.qozonlar img {
+    max-width: 87px;
+    height: 87px;
+    transition: all .5s ease;
+}
+
+.qozon {
+    max-width: 349px;
+    height: 328px;
+    margin: 0 auto;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    margin-top: 129px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.qozon:hover img {
+    transform: translateY(-20px);
+}
+
+.qozon p {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #656363;
+}
+
+.qozon .qozon_text b {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.qozon .qozon_text i {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #BC9060;
+}
+
+.qozon .qozon_text {
+    margin-bottom: 20px;
+}
+
+/* Наша История */
+
+.background {
+    background: #E5E5E5;
+}
+
+.bizning_tariximiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.bizning_tariximiz .galeriya {
+    max-width: 539px;
+    margin-top: 420px;
+    margin-bottom: 122px;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.bizning_tariximiz .galeriya:hover {
+    transform: scale(1.1);
+}
+
+.bizning_tariximiz .theme {
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+}
+
+.bizning_tariximiz .text_one b {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+}
+
+.bizning_tariximiz .text_one i {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #D67E34;
+}
+
+.bizning_tariximiz .text_p p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #656363;
+    max-width: 444px;
+    margin-top: 27px;
+    margin-bottom: 50px;
+}
+
+.bizning_tariximiz .number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bizning_tariximiz .number .span h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #BC9060;
+}
+
+.bizning_tariximiz .number .span span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+/* ЗАКАЗ СТОЛИКА  */
+.bg_img {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/bg_img.jpg);
+    padding: 80px 0 104px;
+}
+
+.zakazchik {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_zakaz {
+    max-width: 601px;
+}
+
+.text_zakaz .zakaz h2 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    color: #D67E34;
+}
+
+.text_zakaz .zakaz_two p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.zakazchik .silka a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #FF7400;
+    padding: 15px 20px;
+}
+
+.zakazchik .silka a:hover {
+    color: #ff7400;
+    background: #FFFFFF;
+}
+
+/* Наши Блюда */
+.background_fon {
+    background: #E5E5E5;
+    padding: 132px 0 152px;
+    text-align: center;
+}
+
+.titl h2 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+    margin-bottom: 140px;
+}
+
+.titl i {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #D67E34
+}
+
+.images_block {
+    display: flex;
+    justify-content: center;
+}
+
+.images_block .block {
+    margin-right: 15px;
+    overflow: hidden;
+    max-width: 445px;
+    height: 480px;
+}
+
+.images_block .block img {
+    max-width: 445px;
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+.images_block .block img:hover {
+    transform: scale(1.5);
+}
+
+
+.images_block .blocks .blok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+    margin-right: 10px;
+}
+
+.images_block .blocks .blok .blok_img {
+    max-width: 159px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.images_block .blocks .blok .blok_img img {
+    max-width: 160px;
+    height: 140px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.images_block .blocks .blok .blok_img img:hover {
+    transform: scale(1.5);
+}
+
+.images_block .blocks .blok h2 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+    margin-left: 15px;
+}
+
+/* Наше меню  */
+.background_images {
+    background: url(images/bizning\ barimiz.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 240px;
+}
+
+.bizning_menyumiz h2 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 150px;
+}
+
+.menyular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.burger {
+    background: #FFFFFF;
+    padding: 80px 65px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+
+.burger .maksi {
+    max-width: 210px;
+}
+
+.burger .maksi h5 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.burger .maksi_p p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin: 20px 0 20px;
+}
+
+.burger .buyurtma a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #D67E34;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    padding: 15px 70px;
+    display: inline-block;
+}
+
+.burger .buyurtma a:hover {
+    background: #000000;
+}
+
+.burger .gam {
+    position: relative;
+    cursor: pointer;
+}
+
+.burger .gam span {
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background-color: #D67E35;
+    padding: 33px 29px;
+    border-radius: 50%;
+    border: solid 7px white;
+    position: absolute;
+    top: 110px;
+    right: -22px;
+}
+
+.burger .gam img {
+    max-width: 225px;
+    border-radius: 50%;
+}
+
+/* Посетитель */
+
+.bgcolor {
+    background: #E6E5E5;
+    padding: 104px 0 108px;
+}
+
+.bolim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.razgovazr {
+    max-width: 920px;
+}
+
+.razgovazr p {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+.soqol {
+    margin: 20px 0 20px
+}
+
+.soqol img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nikolay {
+    text-align: center;
+}
+
+.nikolay h5 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.nikolay h6 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.slider {
+    margin-top: 30px;
+}
+
+.slider img {
+    cursor: pointer;
+}
+
+/* Галерея Блюд */
+
+.bggoleriya {
+    background: whitesmoke;
+    padding: 100px 0;
+}
+
+.goleriya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.goleriya h1 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+    margin-right: 30px;
+}
+
+.goleriya h2 {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #D67E34;
+}
+
+.showroom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.showroom .blocks {
+    max-width: 550px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.showroom .blocks .bokal .bokal_img img {
+    max-width: 550px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.showroom .blocks .bokal .bokal_img {
+    max-width: 538px;
+    height: 274px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.showroom .blocks .bokal img:hover {
+    transform: scale(1.2);
+}
+
+.showroom .blocks .coffe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showroom .blocks .coffe .coffes {
+    max-width: 250px;
+    height: 274px;
+    overflow: hidden;
+}
+
+.showroom .blocks .coffe .coffes img {
+    max-width: 250px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.showroom .blocks .coffe .coffes img:hover {
+    transform: scale(1.2);
+}
+
+.showroom .blocks_2 {
+    max-width: 550px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.showroom .blocks_2 .bokal .bokal_img img {
+    max-width: 550px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.showroom .blocks_2 .bokal img:hover {
+    transform: scale(1.2);
+}
+
+.showroom .blocks_2 .bokal .bokal_img {
+    max-width: 538px;
+    height: 274px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.showroom .blocks_2 .coffe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showroom .blocks_2 .coffe .coffes {
+    max-width: 250px;
+    height: 274px;
+    overflow: hidden;
+}
+
+.showroom .blocks_2 .coffe .coffes img {
+    max-width: 250px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.showroom .blocks_2 .coffe .coffes img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* наши повара */
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img_block {
+    cursor: pointer;
+}
+
+.img {
+    position: relative;
+    overflow: hidden;
+}
+
+.tarmoq {
+    background-color: #656363;
+    padding: 12px 25px;
+    color: #FF7400;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transform: translateY(-90px);
+    transition: all .6s ease;
+}
+
+.images .img:hover .tarmoq {
+    transform: translateY(0);
+}
+
+.images .img .tarmoq .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images .img .tarmoq .icons a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.images .img .tarmoq .icons a i {
+    color: #ff7400;
+    font-size: 25px;
+}
+
+.images .img .tarmoq .aloqa p {
+    font-family: 'Tinos';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #ff7400;
+}
+
+/* ==================== */
+
+.bg_bar .bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_bar .bar img {
+    width: 100%;
+}
